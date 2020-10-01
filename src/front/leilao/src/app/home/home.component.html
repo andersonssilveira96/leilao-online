@@ -1,0 +1,20 @@
+
+<div>
+    <div class="text-center">
+        <h1>Leilões</h1>
+        <hr>
+    </div>        
+</div>
+<div>       
+    <div class="example-button-row text-right">      
+        <button mat-raised-button color="primary" (click)="openDialog()">Adicionar novo</button>       
+    </div>
+    <div *ngIf="leiloes.length > 0">
+        <app-table (editarClicked)="editar($event)" 
+                   (deletarClicked)="remover($event)" 
+                   (visualizarClicked)="visualizar($event)" 
+                   [data]="leiloes"
+                   [displayedColumns]="colunas"
+                   [campos]="campos"></app-table>
+    </div>   
+</div>   

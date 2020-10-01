@@ -1,0 +1,47 @@
+<h2 mat-dialog-title class="text-center">Leilão</h2>
+<mat-dialog-content class="mat-typography">
+    <form *ngIf="form" class="" [formGroup]="form">                        
+      
+        <mat-form-field [disabled]="readonly" class="example-thirty-width">
+            <mat-label>Nome</mat-label>
+            <input matInput required formControlName="nome">
+        </mat-form-field>
+        
+        <mat-form-field [disabled]="readonly" class="example-thirty-width">
+            <mat-label>Valor</mat-label>
+            <input currencyMask matInput required formControlName="valorInicial" >
+        </mat-form-field>      
+        
+        <section class="example-thirty-width">
+            <mat-checkbox [disabled]="readonly" class="example-margin" formControlName="usado">Usado?</mat-checkbox>          
+        </section>
+      
+        <mat-form-field *ngIf="leilao?.id" class="example-full-width">
+            <mat-label>Usuário responsável</mat-label>
+            <input matInput formControlName="usuario" >
+        </mat-form-field>   
+
+        <mat-form-field class="example-half-width" appearance="fill">
+            <mat-label>Data de abertura</mat-label>
+            <input matInput required [matDatepicker]="picker" formControlName="dataAbertura">
+            <mat-datepicker-toggle [disabled]="readonly" matSuffix [for]="picker">
+              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        
+        <mat-form-field class="example-half-width" appearance="fill">
+            <mat-label>Data de finalização</mat-label>
+            <input matInput required [matDatepicker]="picker1" formControlName="dataFinalizacao">
+            <mat-datepicker-toggle [disabled]="readonly" matSuffix [for]="picker1">
+              <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+            </mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+        
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions *ngIf="!readonly" align="end">
+  <button mat-button mat-dialog-close>Cancelar</button>
+  <button mat-button (click)="salvar()" cdkFocusInitial>Salvar</button>
+</mat-dialog-actions>

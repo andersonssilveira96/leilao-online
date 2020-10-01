@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="login-container">
+    <h2>Acesso ao sistema</h2>
+    <div id="output"></div>
+    <div class="avatar">    
+    </div>
+    <div class="form-box">
+        <form [formGroup]="form" (ngSubmit)="logar()">
+            <input [formControlName]="'email'" type="text" placeholder="Usuário">
+            <input [formControlName]="'senha'" type="password" placeholder="Senha">
+            <button mat-raised-button color="primary" class="btn-block login" type="submit">Login</button>
+        </form>
+    </div>
+  </div>       
+</div>

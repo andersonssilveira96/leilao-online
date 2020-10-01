@@ -1,0 +1,46 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$candy-app-primary: mat-palette($mat-indigo);
+$candy-app-accent:  mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$candy-app-warn:    mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as `color` or `typography`.
+$candy-app-theme: mat-light-theme((
+  color: (
+    primary: $candy-app-primary,
+    accent: $candy-app-accent,
+    warn: $candy-app-warn,  
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($candy-app-theme);
+
+
+.no-background {
+    background: none;
+}
+
+.background {
+    background: #eee url('https://images.squarespace-cdn.com/content/v1/55a020a8e4b090c945baec42/1437525415956-W63OVQO6F8J41R0U6NU5/ke17ZwdGBToddI8pDm48kJ-lwEaoAftuLjKdN6R3JK0UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKckb3AVJqW93B_Yrl1GKfkNXrtc3vrTVAZd1UP72kjqPuexRuWU7PAnw_8ePkSBDKm/Blue_1.jpg?format=1500w');
+}
+
+input, button {
+  -webkit-border-radius: 0!important;
+  -moz-border-radius: 0!important;
+  border-radius: 0!important;
+}

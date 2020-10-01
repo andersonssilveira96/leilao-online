@@ -1,0 +1,9 @@
+<ngx-loading-bar [includeSpinner]="false" [color]="'#FF8C00'"></ngx-loading-bar>
+
+<app-header *ngIf="mostrar"></app-header>
+
+<div class="container margin">
+    <router-outlet></router-outlet>
+</div>
+
+<app-footer *ngIf="mostrar"></app-footer>

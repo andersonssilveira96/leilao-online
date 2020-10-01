@@ -1,0 +1,5 @@
+C:\Users\ander\Desktop\Totvs\src\back\Leilao\LeilaoOnline.Infra.CrossCutting\bin\Debug\LeilaoOnline.Infra.CrossCutting.dll
+C:\Users\ander\Desktop\Totvs\src\back\Leilao\LeilaoOnline.Infra.CrossCutting\bin\Debug\LeilaoOnline.Infra.CrossCutting.pdb
+C:\Users\ander\Desktop\Totvs\src\back\Leilao\LeilaoOnline.Infra.CrossCutting\obj\Debug\LeilaoOnline.Infra.CrossCutting.csproj.CoreCompileInputs.cache
+C:\Users\ander\Desktop\Totvs\src\back\Leilao\LeilaoOnline.Infra.CrossCutting\obj\Debug\LeilaoOnline.Infra.CrossCutting.dll
+C:\Users\ander\Desktop\Totvs\src\back\Leilao\LeilaoOnline.Infra.CrossCutting\obj\Debug\LeilaoOnline.Infra.CrossCutting.pdb
