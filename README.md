@@ -19,7 +19,7 @@ Email de login: "teste@teste.com.br" e senha "123";
 
 ## Informações
 
-Desenvolvido com ASP Net Core e EF Core, autenticação via JWT, filtros para tratar retornos, DDD, aplicando os principios de SOLID, testes unitários com XUnit e Pattern Unit of Work.
+Desenvolvido com ASP Net Core e EF Core, autenticação via JWT, AutoMapper, FluentValidation, filtros para tratar retornos, DDD, aplicando os principios de SOLID, testes unitários com XUnit e Pattern Unit of Work.
 
 Swagger implementado como documentação da API, na rota /swagger
 
