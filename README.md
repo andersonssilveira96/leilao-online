@@ -7,7 +7,7 @@ Basta abrir a solution em um visual studio que tem suporte para o ASP Net Core 3
 
 ## Informações
 
-Desenvolvido com ASP Net Core e EF Core, DDD, aplicando os principios de SOLID, testes unitários com XUnit e Pattern Unit of Work.
+Desenvolvido com ASP Net Core e EF Core, autenticação via JWT, filtros para tratar retornos, DDD, aplicando os principios de SOLID, testes unitários com XUnit e Pattern Unit of Work.
 
 Utilizado migration para criar a base, connection string se encontra no appSettings, para criar basta trocar a connectionString e rodar o comando do migration, já deixei configurado o seed para a base já ser criada com dados.
 
