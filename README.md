@@ -7,7 +7,7 @@ Basta abrir a solution em um visual studio que tem suporte para o ASP Net Core 3
 
 ## Informações
 
-Desenvolvido com ASP Net Core e EF Core, DDD, aplicando os principios de SOLID e com o Pattern Unit of Work.
+Desenvolvido com ASP Net Core e EF Core, DDD, aplicando os principios de SOLID, testes unitários com XUnit e Pattern Unit of Work.
 
 Utilizado migration para criar a base, connection string se encontra no appSettings, para criar basta trocar a connectionString e rodar o comando do migration, já deixei configurado o seed para a base já ser criada com dados.
 
@@ -24,5 +24,5 @@ E após isso já pode rodar o projeto:
 
 ## Informações
 
-O projeto foi feito com angular 10, angular material e scss como pré processador.
+Desenvolvido em angular 10, utilizando angular material, intefaces, interceptor, toastr, bootstrap, loader, services.
 
