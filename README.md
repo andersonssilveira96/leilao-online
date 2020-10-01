@@ -10,6 +10,7 @@ Para criar o banco de dados através do Migration do Entity, seguir os seguintes
 Configurar a connection string que se encontra no appSettings, depois abrir o  "Console do Gerenciador de pacotes", selecionar o projeto "LeilaoOnline.Infra.Data", e executar:
 
 1 - ) add-migration "nome"
+
 2 - ) update-database
 
 O banco vai ser criado e já deixei configurado para quando criar popular a base com alguns dados.
